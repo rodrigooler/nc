@@ -1,7 +1,18 @@
 const R = require("ramda"),
-  fp = require("./fp");
+  {
+    toCamelCase,
+    toCamelCaseF,
+    toCamelCaseP,
+    toSnakeCase,
+    toSnakeCaseF,
+    toSnakeCaseP,
+  } = require("./fp");
 
 module.exports = {
-  toSnakeCase: R.uncurryN(fp.toSnakeCase),
-  toCamelCase: R.uncurryN(fp.toCamelCase),
+  toSnakeCase: R.uncurryN(toSnakeCase),
+  toCamelCase: R.uncurryN(toCamelCase),
+  toSnakeCaseF: R.uncurryN(toSnakeCaseF),
+  toSnakeCaseP: R.uncurryN(toSnakeCaseP),
+  toCamelCaseF: R.uncurryN(toCamelCaseF),
+  toCamelCaseP: R.uncurryN(toCamelCaseP),
 };

@@ -1,0 +1,30 @@
+{
+  "name": "nc",
+  "description": "Problems in maintaining the standard of return of your requests in the integrations? This lib solves exactly that problem and you can use functional programming.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rodrigo Oler",
+    "email": "roodrigoprogrammer@@gmail.com",
+    "url": "https://rodrigooler.sh"
+  },
+  "dependencies": {
+    "ramda": "0.27.1",
+    "camelcase-keys": "^6.2.2",
+    "snakecase-keys": "^3.2.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "funding": "https://github.com/sponsors/rodrigooler",
+  "keywords": [
+    "camelcase",
+    "snackcase"
+  ],
+  "license": "MIT",
+  "repository": "rodrigooler/nc",
+  "scripts": {
+    "test": "xo && ava && tsd"
+  }
+}
